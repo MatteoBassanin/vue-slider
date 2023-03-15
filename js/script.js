@@ -45,9 +45,13 @@ const { createApp } = Vue
         },
         autoPlay(){
             setInterval(this.gotoNext,2000)
+        },
+        stopAutoPlay(){
+            clearInterval(this.gotoNext)
         }
     },
     mounted (){
         this.autoPlay();
+        
     }
   }).mount('#app')

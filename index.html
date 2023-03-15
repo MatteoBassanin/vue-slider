@@ -17,7 +17,7 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img :src="arrayImage[activeImage].image" alt="Spiderman" />
+                    <img :src="arrayImage[activeImage].image" alt="Spiderman"/>
                     <div class="text">
                         <h3>Spiderman</h3>
                         <p>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div class="thumbs">
+                <div class="thumbs" mouseover="stopAutoPlay()">
                     <div class="prev"  @click="gotoPrev"></div>
                     <div class="next" @click="gotoNext"></div>
                     <div class="thumb active">
