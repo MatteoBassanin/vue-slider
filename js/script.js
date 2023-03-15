@@ -4,6 +4,7 @@ const { createApp } = Vue
     data() {
       return {
         activeImage: 0,
+        play: "",
         arrayImage:[{
             image: 'img/01.webp',
             title: 'Marvel\'s Spiderman Miles Morale',
@@ -25,7 +26,7 @@ const { createApp } = Vue
             title: "Marvel's Avengers",
             text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
         }],
-        
+    
       }
     },
     methods:{
@@ -45,10 +46,10 @@ const { createApp } = Vue
             this.activeImage = newActiveimg;
         },
         autoPlay(){
-           play = setInterval(this.gotoNext,2000)
+           this.play = setInterval(this.gotoNext,2000)
         },
         stopAutoPlay(){
-            clearInterval (play)
+            clearInterval (this.play)
             
         }
     },
