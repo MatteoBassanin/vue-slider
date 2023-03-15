@@ -39,6 +39,10 @@ const { createApp } = Vue
             if (this.activeImage == this.arrayImage.length){
                 this.activeImage = 0
             }
+        },
+        changeOnClick (newActiveimg){
+            this.activeImage = newActiveimg;
         }
     },
+
   }).mount('#app')
