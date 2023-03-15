@@ -45,7 +45,7 @@ const { createApp } = Vue
             this.activeImage = newActiveimg;
         },
         autoPlay(){
-           return play = setInterval(this.gotoNext,2000)
+           play = setInterval(this.gotoNext,2000)
         },
         stopAutoPlay(){
             clearInterval (play)
