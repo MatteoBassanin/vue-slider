@@ -29,7 +29,7 @@
                     </div>
                 </div>
 
-                <div class="thumbs" @mouseover="stopAutoPlay()">
+                <div class="thumbs" @mouseover="stopAutoPlay" @mouseleave="autoPlay">
                     <div class="prev"  @click="gotoPrev"></div>
                     <div class="next" @click="gotoNext"></div>
                     <div class="thumb active">
