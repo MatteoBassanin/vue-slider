@@ -42,7 +42,12 @@ const { createApp } = Vue
         },
         changeOnClick (newActiveimg){
             this.activeImage = newActiveimg;
+        },
+        autoPlay(){
+            setInterval(this.gotoNext,2000)
         }
     },
-
+    mounted (){
+        this.autoPlay();
+    }
   }).mount('#app')
